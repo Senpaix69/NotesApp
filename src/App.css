@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  padding: 0;
+  background-color: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.App {
+  margin: auto;
+  padding: 5px;
+  max-width: 970px;
+  min-width: 350px;
+}
+
+.Navbar {
+  display: flex;
+  padding: 5px 15px;
+  padding-top: 10px;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar--Header {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 0.7rem;
+  font-size: 1rem;
+}
+
+.logo {
+  width: 100px;
+}
+
+.head {
+  color: rgb(91, 223, 199);
+  -webkit-text-stroke: 0.9px rgb(0, 0, 0);
+  -webkit-text-fill-color: #29e7cd;
+}
+
+button {
+  text-align: center;
+  padding: 4px 8px;
+  border: 3px solid;
+  border-color: rgb(91, 223, 199);
+  border-radius: 40px;
+  font-weight: 600;
+  background-color: #29e7cd;
+  background-image: linear-gradient(315deg, #29e7cd 0%, #fffbfc 74%);
+
+}
+
+button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(315deg, #29e7cd 5%, #ffffff 100%);
+}
+
+.dropbtn {
+  color: black;
+  padding: 8px 15px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #29e7cd;
+  border-radius: 20px;
+  right: 50px;
+  top: 10px;
+  width: 120px;
+  height: 105px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a{
+  font-size: small;
+  font-weight: bold;
+}
+
+.active {
+  display: block;
+}
+
+.dropdown-img {
+  width: 20px;
+}
+
+.btn-img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.d-btn-img {
+  width: 20px;
+  padding: 0 2px;
+}
+
+.btn-list button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-img-active {
+  transform: rotate(90deg);
+}
+
+.Search {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  padding-top: 0;
+}
+
+input {
+  border: 4px solid rgb(91, 223, 199);
+  font-weight: 600;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  outline-width: 0;
+}
+
+.Notes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  padding-top: 3px;
+}
+
+.Note {
+  padding-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 250px;
+}
+
+.Note img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+}
+
+.Note--Card {
+  padding: 10px;
+  width: 94%;
+  height: 93%;
+  border-radius: 20px;
+  background-color: #29e7cd;
+  background-image: linear-gradient(315deg, #29e7cd 0%, #fffbfc 74%, #29e7cd 1%);
+  position: relative;
+}
+
+.Dark-Card {
+  background-color: rgb(4, 4, 4);
+  background-image: linear-gradient(315deg, rgba(13, 171, 137, 0.738) 30%, #40c6b4dc 20%, rgb(3, 177, 139) 60%);
+}
+
+.Dark-Card ::placeholder {
+  color: black;
+}
+
+.Search input[type="text"] {
+  background: transparent;
+  color: black;
+}
+
+.Dark-Search input[type="text"] {
+  color: white;
+}
+
+.Note--Card>h1 {
+  font-size: large;
+  font-weight: bolder;
+  position: absolute;
+  top: 5px;
+}
+
+.para {
+  position: absolute;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.15);
+  width: 95%;
+  top: 50px;
+  height: 60%;
+}
+
+.Note--Card>button {
+  position: absolute;
+  bottom: 6px;
+  right: 15px;
+}
+
+.Note--Card>span {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: small;
+  opacity: 90%;
+}
+
+.Add--Title {
+  width: 100%;
+  height: 20%;
+  font-size: large;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  background: none;
+}
+
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  background: none;
+  height: 99%;
+  width: 99%;
+  outline-width: 0;
+  resize: none;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Footer {
+  margin: auto;
+  max-width: 500px;
+  padding: 0px 10px;
+  padding-bottom: 40px;
+}
+
+.imag {
+  background-color: #29e7cd;
+  background-image: linear-gradient(315deg, #29e7cd 1%, #fffbfc 80%, #29e7cd 1%);
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 50px;
+  margin: auto;
+  width: 500px;
+  max-width: 100px;
+  min-width: 350px;
+}
+
+.Dark-Footer {
+  background-color: rgb(4, 4, 4);
+  background-image: linear-gradient(315deg, rgba(13, 171, 137, 0.738) 30%, #40c6b4dc 20%, rgb(3, 177, 139) 60%);
+}
+
+.Footer--con {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Footer--con>h1 {
+  font-size: 30px;
+}
+
+.Footer--con>img {
+  width: 110px;
+}
+
+#git {
+  width: 75px;
+}
+
+.social {
+  width: 60px;
+  padding: 10px;
+}
+
+.social:hover {
+  cursor: pointer;
+  width: 70px;
+}
+
+.btn-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .Note {
+    width: 100%;
+    height: 250px;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .heade {
+    margin-left: 4rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .Footer--con h1 {
+    font-size: 1.5rem;
+  }
+  .head1 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: x-small;
+  }
+
+  .Card-logo {
+    max-width: 55px;
+  }
+
+}
+
+@media screen and (min-width: 820px) {
+  .Note {
+    width: 33%;
+    height: 250px;
+  }
+}
